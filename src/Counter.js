@@ -14,10 +14,10 @@ function Counter() {
         </button>
     </div >
   );
-  
 }
 export default Counter;
 
+// AUFGABE 1:
 // class Counter extends React.Component {
 
 //   state = { count: this.props.init };
