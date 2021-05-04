@@ -3,15 +3,27 @@ import React, { useState } from 'react'; // Fuer hook
 
 function Counter() {
 
-  const [state, setState] = useState({count: 0});
+  const [state, setState] = useState({count: 0}); // A2a
+  const [num, setNum] = useState(0); //
+
 
   return (
     <div>
-      Count: {state.count}
-      <br></br>
-      <button onClick={() => setState({ count: parseInt(state.count) + 1 })}>
-        OK
-        </button>
+      <div>
+        Count: {state.count}
+        <br></br>
+        <button onClick={() => setState({ count: parseInt(state.count) + 1 })}>
+         OK
+      </button>
+      </div >
+      
+      <div>
+        Count (single value): {num}
+        <br></br>
+        <button onClick={() => setNum(num + 1)}>
+          OK
+      </button>
+      </div >
     </div >
   );
 }
