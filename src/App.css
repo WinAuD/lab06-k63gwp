@@ -1,0 +1,12 @@
+ul li { 
+  display: inline; 
+  background-color:#AEA; 
+  padding: 10px;
+}
+
+.hurray { 
+  background-color:#F0F; 
+  color: #000; 
+  font-weight: bold; 
+  padding : 5px;
+}
