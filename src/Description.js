@@ -1,12 +1,14 @@
 import React, { Component } from "react";
- 
+
 class Description extends Component {
- 
+  
   render() {
-    return <div>
-      <h1>Batman</h1>
-      Batman is a fictional superhero appearing in American comic books published by DC Comics. The character was created by artist Bob Kane and writer Bill Finger,[2][3] and first appeared in Detective Comics #27 in 1939. </div>
+    return (
+      <div>
+        <h1>Description</h1>
+        Description{" "}
+      </div>
+    );
   }
 }
- 
 export default Description;

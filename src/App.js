@@ -9,21 +9,21 @@ class NameTag extends Component {
  
   render() {
     return (
-    <HashRouter>
-      <div>
-        <h1>Reader Page</h1>
-        <ul>
-          <li ><a href="/" >Description</a></li>
-          <li><a href="/batman">Input</a></li>
-          <li><a href="/spiderman">Output</a></li>
-        </ul>
-        <div className="myHeroContent">
-    <Route path="/" component={Description} />
-    <Route path="/bat" component={Input} />
-    <Route path="/spid" component={Output} />
-  </div>
-      </div>
-     </HashRouter>
+      <HashRouter>
+        <div>
+          <h1>Reader Page</h1>
+          <ul>
+            <li ><NavLink exact to ="/" >Description</NavLink></li>
+            <li><NavLink to ="/input">Input</NavLink></li>
+            <li><NavLink to="/output">Output</NavLink></li>
+          </ul>
+          <div className="myHeroContent">
+            <Route exact path="/" component={Description} />
+            <Route path="/input" component={Input} />
+            <Route path="/output" component={Output} />
+          </div>
+        </div>
+      </HashRouter>
     )
   }
 }
