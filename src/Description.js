@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./Description.css";
+import { Route, NavLink, HashRouter } from "react-router-dom";
 
 class Description extends Component {
   
@@ -9,7 +10,7 @@ class Description extends Component {
         <h1>Description</h1>
         Description text.{" "}
         <button class="NiceButton">
-          Klick
+          <li><NavLink to ="/input">Input</NavLink></li>
         </button>
       </div>
     );

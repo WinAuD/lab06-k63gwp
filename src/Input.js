@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./Input.css";
+import { Route, NavLink, HashRouter } from "react-router-dom";
 
 class Input extends Component {
 
@@ -11,7 +12,7 @@ class Input extends Component {
           <textarea value={this.props.content} onChange={this.props.contUpdate}/>
         </form>
         <button class="NiceButton">
-          Klick
+          <NavLink to="/output">Output</NavLink>
         </button> 
       </div>
     );
