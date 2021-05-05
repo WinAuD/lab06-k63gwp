@@ -6,7 +6,7 @@ class Output extends Component {
     return (
       <div>
         <h1>Output</h1>
-        Output{" "}
+        {this.props.content}
       </div>
     );
   }

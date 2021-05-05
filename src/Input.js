@@ -1,18 +1,18 @@
 import React, { Component } from "react";
+import "./Input.css";
 
 class Input extends Component {
 
-  state= { text: ""};
-
-  handleChange= (event) =>{this.setState( {text: event.target.value});}
-  
   render() {
     return (
       <div>
         <h1>Input</h1>
         <form>
           <textarea value={this.props.content} onChange={this.props.contUpdate}/>
-        </form> 
+        </form>
+        <button class="NiceButton">
+          Klick
+        </button> 
       </div>
     );
   }

@@ -26,7 +26,9 @@ class NameTag extends Component {
             <Route path="/input">
               <Input contUpdate={this.handleChange}content={this.state.text}/>
             </Route>
-            <Route path="/output" component={Output} />
+            <Route path="/output" >
+              <Output content={this.state.text}/>
+            </Route>
           </div>
         </div>
       </HashRouter>

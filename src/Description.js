@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./Description.css";
 
 class Description extends Component {
   
@@ -6,7 +7,10 @@ class Description extends Component {
     return (
       <div>
         <h1>Description</h1>
-        Description{" "}
+        Description text.{" "}
+        <button class="NiceButton">
+          Klick
+        </button>
       </div>
     );
   }
