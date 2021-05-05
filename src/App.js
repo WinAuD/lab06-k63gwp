@@ -13,7 +13,7 @@ class NameTag extends Component {
  
   render() {
     return (
-      <HashRouter>
+      <HashRouter> 
         <div>
           <h1>Reader Page</h1>
           <ul>
